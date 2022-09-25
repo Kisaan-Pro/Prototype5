@@ -1,0 +1,20 @@
+.redTemp{
+    height: 250px;
+    width: 250px;
+    background-image: linear-gradient( white,white, red);
+    margin: auto;
+    /* opacity: 90%; */
+}
+
+.redImg{
+    height: 25%;
+    width: 25%;
+}
+
+.greenTemp{
+    height: 250px;
+    width: 250px;
+    background-image: linear-gradient( white,white, green);
+    margin: auto;
+    /* opacity: 90%; */
+}
