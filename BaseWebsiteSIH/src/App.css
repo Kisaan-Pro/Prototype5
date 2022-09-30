@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto:wght@100&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.Header{
+  padding-top: 20px;
+}
+
+
+
+.DisplayButtons{
+  padding-top: 30px;
+  font-family: Roboto;
+}
+
+.inputRounded .MuiOutlinedInput-root {
+  border-radius: 20px;
+}
+
+.b1{
+  color: aquamarine;
+}
+
+.Pump{
+  font-family: Nato Sans;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.btn-temp {
+  background-color: white;
+  border-radius: 20px;
+  border-color: rgb(238, 96, 2);
+  border-width: 1.5px;
+  margin: 10px;
+  padding: 7px 30px;
+  font-family : "sans-serif";
+  font-size: 15px;
+  width: 180px;
+}
+
+
+
+.btn-temp:focus{
+  background-color: #800000;
+  border-radius: 20px;
+  border-width: 1.5px;
+}
+
+
+.btn-temp:focus > .btn-text-temp {
+  color: white;
+  font-family : "sans-serif";
+  font-size: 15px;
+}
+
+.btn-text-temp {
+  color: #5A5959;
+}

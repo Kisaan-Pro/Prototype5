@@ -21,6 +21,10 @@ import Co2level2 from './Co2level2'
 import Water2 from './Water2'
 import Humidity2 from './Humidity2'
 import NodeMesh from './NodeMesh'
+import Button1 from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.css';
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+
 
 
 function registered(){
@@ -108,7 +112,7 @@ function App() {
         color: color,
         backgroundColor: color,
         height: 0.02,
-        width: '80%',
+        width: '86%',
       }}
     />
   );
@@ -191,7 +195,7 @@ function App() {
         </p> */}
       </div>
 
-      <div class="DisplayButtons" style={{ paddingTop: "30px" }}>
+      <div class="DisplayButtons" style={{ paddingTop: "10px" }}>
 
         {/* color dot in inside button in react js */}
 {/* 
@@ -245,7 +249,7 @@ function App() {
       </div>
 
 
-      <div className="Solar" style={{}}>
+      <div className="Solar" style={{marginTop: "40px", marginBottom: "40px"}}>
         <Button variant="outlined" style={{
           marginTop: "20px",
           alignSelf: 'center',
@@ -260,105 +264,54 @@ function App() {
         }}><b style={{ fontSize: "16x" }}>Solar Powered Battery</b><b style={{ color: "green", marginLeft: "10px", fontSize: "18px" }}> 80%</b> </Button>
 
       </div>
-      <div className="line" style={{ marginTop: "20px"  }}>
+      <div className="line" style={{ margin: "25px"  }}>
         <ColoredLine color="#C0C0C0" />
       </div>
 
       <div class="DisplayButtons" style={{ height: "", marginBottom: "30px", display: "flex", justifyContent: "space-evenly" }}>
         <container>
-        <Button variant="outlined" onClick ={()=>{setT(22); settoDisplay('Temperature2')}} style={{
-          position: 'relative',
-          borderWidth: 1,
-          borderColor: '#EE6002',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          paddingLeft: '5px',
-          marginTop: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "15px", color: "#5A5959" }}>Temperature</b></Button>
-        <Button variant="outlined" onClick ={()=>{setW(60); settoDisplay('Water2')}}  style={{
-          borderWidth: 1,
-          position: 'relative',
-          borderColor: '#EE6002',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          marginLeft: '5px',
-          marginTop: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
 
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "15px", color: "#5A5959" }}>Water</b></Button>
-        <Button variant="outlined" onClick ={()=>{setC(30)
-        settoDisplay('Co2level2')}} style={{
-          borderWidth: 1,
-          position: 'relative',
-          borderColor: '#EE6002',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          marginTop: '5px',
-          marginLeft: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "15px", color: "#5A5959" }}>CO2 Level</b></Button>
-        <Button variant="outlined" onClick={{ backgroundColor: '#EE6002' }} href="#" style={{
-          borderWidth: 1,
-          borderColor: '#EE6002',
-          position: 'relative',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          marginLeft: '5px',
-          marginTop: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
-          
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "12px", color: "#5A5959" }}> NPK </b></Button>
+        <button className="btn-temp" onClick ={()=>{setT(22); settoDisplay('Temperature2')}}>
+          <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            TEMPERATURE
+            </b>
+        </button>
 
-        <Button variant="outlined" onClick ={()=>{setH(30); settoDisplay('Humidity2')}} style={{
-          borderWidth: 1,
-          borderColor: '#EE6002',
-          position: 'relative',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          marginLeft: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
-          marginTop: '5px',
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "15px", color: "#5A5959" }}> Humidity</b></Button>
-      
-      <Button variant="outlined" onClick ={()=>{ settoDisplay('NodeMesh')}}style={{
-          borderWidth: 1,
-          borderColor: '#EE6002',
-          position: 'relative',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '35px',
-          width: '200px',
-          marginLeft: '5px',
-          marginTop: '5px',
-          backgroundColor: '#fff',
-          borderRadius: 20,
-          borderWidth: 1.5,
-          
-        }}><b style={{ fontFamily: "sans-serif", fontSize: "12px", color: "#5A5959" }}> Node Mesh </b></Button>
+
+        <button className="btn-temp" onClick ={()=>{setW(60); settoDisplay('Water2')}}>
+        <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            WATER
+            </b>
+        </button>
+
+
+        <button className="btn-temp" onClick ={()=>{setC(30); settoDisplay('Co2level2')}}>
+        <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            CO2 LEVEL
+            </b>
+        </button>
+
+        <button className="btn-temp" onClick ={{ backgroundColor: '#EE6002' }} href="#">
+        <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            NPK VALUES
+            </b>
+        </button>
+
+        <button className="btn-temp" onClick ={()=>{setH(30); settoDisplay('Humidity2')}}>
+        <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            HUMIDITY
+            </b>
+        </button>
+
+        <button className="btn-temp" onClick ={()=>{ settoDisplay('NodeMesh')}}>
+        <b className="btn-text-temp" style={{ fontFamily: "sans-serif", fontSize: "15px"}}>
+            NODEMESH
+            </b>
+        </button>
+        
 
       </container>
-      </div>
+      </div> <div className="abcd"/>
 
       <div className="line" style={{ marginTop: "60px" }}>
         <ColoredLine color="grey" />
