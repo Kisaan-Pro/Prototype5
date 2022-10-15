@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto:wght@100&display=swap');
+
+.App {
+  text-align: center;
+  background-color: #fafafa;
+
+}
+
+.Header{
+  padding-top: 10px;
+  background-color: #f5f5f5;
+}
+
+
+.DisplayButtons{
+  padding-top: 15px;
+  font-family: Roboto;
+}
+
+.inputRounded .MuiOutlinedInput-root {
+  border-radius: 20px;
+  border-color: rgb(238, 96, 2);
+  border-width: 5px;
+}
+
+
+
+.b1{
+  color: aquamarine;
+}
+
+.Pump{
+  font-family: Nato Sans;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.btn-temp {
+  background-color: #fafafa;
+  border-radius: 20px;
+  border-color: rgb(238, 96, 2);
+  border-width: 2px;
+  margin: 10px;
+  padding: 7px 30px;
+  font-family : "sans-serif";
+  font-size: 15px;
+  width: 180px;
+}
+
+
+
+.btn-temp:focus{
+  background-color: #ff0000;
+  border-radius: 20px;
+  border-width: 2px;
+}
+
+
+.btn-temp:focus > .btn-text-temp {
+  color: white;
+  font-family : "sans-serif";
+  font-size: 15px;
+}
+
+.btn-text-temp {
+  color: #5A5959;
+}
+
+.logo{
+  background-position: left top;
+  margin-left: 5%;
+  vertical-align: middle;
+  /* position: relative;
+  margin-left: -10%;
+  /* justify-items:left ; */
+   /* justify-content: left; */
+}
+ 
+.dnt{
+  margin-right: 5%;
+  vertical-align: middle;
+}
+
+.Solarbattery{
+  font-weight: bolder;
+}
+
+
+.inputRounded{
+ font-size: small;
+ width: 50%;
+ border-width: 2px;
+}
+
+.inputRounded> label{
+  font-size: small;
+  color: #5A5959;
+  font-weight: 600;
+  font-size: medium ;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .big-screen {
+    display: none !important;
+  }
+  .small-screen {
+    display: flex !important;
+  }
+  p.dnt{
+    font-size: 11px !important;
+    display: block;
+    padding-top: 12px;
+  }
+
+  .logo{
+    height: 50px;
+    width: 100px;
+    display: block;
+  }
+  .solarbutton{
+    width:315px !important;
+  }
+
+  .inputRounded> label{
+    font-size: small;
+  }
+
+}
+
+@media only screen and (min-width: 500px) {
+  .small-screen {
+    display: none !important;
+  }
+  .big-screen {
+    display: flex !important;
+  }
+  .nextline{
+    display: none !important;
+  }
+}
+
